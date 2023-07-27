@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" href="/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- <title>Vue Vite</title> -->
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" />
+    <!-- Styles -->
+    
+
+    <link rel="canonical" href="https://dev-app-assets.au-5g.auone.jp/campaign/3/index.html" />
+
+    <script>
+      // ダブルタップによる拡大を禁止
+      var t = 0;
+      document.documentElement.addEventListener('touchend', function (e) {
+        var now = new Date().getTime();
+        if ((now - t) < 350) {
+          e.preventDefault();
+        }
+        t = now;
+      }, false);
+      
+      // 長押し及びドラッグを禁止
+      var css = '*{-webkit-touch-callout:none;-webkit-user-select:none;-webkit-user-drag:none;}';
+      var head = document.head || document.getElementsByTagName('head')[0];
+      var style = document.createElement('style');
+      style.type = 'text/css';
+      style.appendChild(document.createTextNode(css));
+      head.appendChild(style);
+    </script>
+    <script type="module" crossorigin src="/campaign/preview/assets/index-de7ce518.js"></script>
+    <link rel="modulepreload" crossorigin href="/campaign/preview/assets/vendor-3be70127.js">
+    <link rel="stylesheet" href="/campaign/preview/assets/index-bc959e0d.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <!-- Google Tag Manager -->
+    <noscript
+      ><iframe
+        src="//www.googletagmanager.com/ns.html?id=GTM-WDSJHQJ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-WDSJHQJ')
+    </script>
+    <!-- End Google Tag Manager -->
+  </body>
+</html>
